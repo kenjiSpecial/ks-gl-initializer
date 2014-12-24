@@ -2,14 +2,14 @@
   "author": "Kenji Saito <k.saito.1985@gmail.com> (http://kenji-special.info)",
   "name": "ks-gl-initializer",
   "description": "beefy-fun",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Kenji Saito/KsGlInitializer",
   "repository": {
     "url": "https://github.com/Kenji Saito/KsGlInitializer"
   },
   "main": "./lib/index.js",
   "scripts": {
-    "start": "beefy  --open ../lib/index.js:KsGlInitializer.js --cwd ./examples -- -r ./lib/index.js:KsGlInitializer",
+    "start" :  "beefy --open ../lib/example.js:example.js --cwd ./examples -- -r ./lib/example.js:example",
     "test": "tap ./test/*.js"
   },
   "devDependencies": {

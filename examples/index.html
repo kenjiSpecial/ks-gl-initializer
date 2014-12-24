@@ -2,10 +2,34 @@
 <html>
 <head>
     <title>KsGlInitializer Examples</title>
+    <link rel="stylesheet" href="normalize.css"/>
+
+    <script id="2d-vertex-shader" type="x-shader/x-vertex">
+    attribute vec2 a_position;
+    varying vec2 v_position;
+
+    void main() {
+       v_position  = a_position;
+       gl_Position = vec4(a_position, 0, 1);
+    }
+    </script>
+    <!-- fragment shader -->
+    <script id="2d-fragment-shader" type="x-shader/x-fragment">
+    precision mediump float;
+
+    uniform float u_time;
+
+    varying vec2 v_position;
+
+
+    void main() {
+       vec2 pointCol = (v_position + 1.0)/2.0;
+       gl_FragColor = vec4( pointCol, u_time, 1 );
+    }
+    </script>
 </head>
 <body>
-
-<script type="text/javascript" src="KsGlInitializer.js"></script>
-
+<canvas id="c"></canvas>
+<script type="text/javascript" src="example.js"></script>
 </body>
 </html>
