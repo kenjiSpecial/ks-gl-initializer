@@ -3,9 +3,9 @@
   "name": "ks-gl-initializer",
   "description": "beefy-fun",
   "version": "0.0.2",
-  "homepage": "https://github.com/Kenji Saito/KsGlInitializer",
+  "homepage": "",
   "repository": {
-    "url": "https://github.com/Kenji Saito/KsGlInitializer"
+    "url": "https://github.com/Kenji Saito/ks-gl-initializer"
   },
   "main": "./lib/index.js",
   "scripts": {
